@@ -1,0 +1,61 @@
+<html>
+<head>
+	<title>Embedded jQuery</title>
+	<script type="text/javascript" src="assets/js/jquery-2.2.4.js"></script>
+</head>
+
+<body>
+<input type="text" id="angka1" /><input type="text" id="angka2" /><br />
+<button id="btn1" value="IniButton">Button Tambah</button>
+<button id="btn2" value="IniButton">Button Kurang</button>
+<button id="btn3" value="IniButton">Button Kali</button>
+<button id="btn4" value="IniButton">Button Bagi</button>
+<script>
+
+	awal1=($("#angka1").val());
+	awal2=($("#angka2").val());
+
+	x=parseInt(awal1);
+	y=parseInt(awal2);
+
+	$("#btn1").click(function() {
+		tambah()
+	});
+
+	$("#btn2").click(function() {
+		kurang()
+	});	
+
+	$("#btn3").click(function() {
+		kali()
+	});
+
+	$("#btn4").click(function() {
+		bagi()
+	});
+
+	//document.getElementById("btn1").onclick = function() {tambah()};
+	//document.getElementById("btn2").onclick = function() {kurang()};
+	//document.getElementById("btn3").onclick = function() {kali()};
+	//document.getElementById("btn4").onclick = function() {bagi()};
+
+	function tambah() {
+		alert(x+y);
+	}
+
+	function kurang() {
+		alert(x-y);
+	}
+
+	function kali() {
+		alert(x*y);
+	}
+
+	function bagi() {
+		alert(x/y);
+	}
+
+</script>
+</body>
+
+</html>
